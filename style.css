@@ -1,0 +1,125 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #003366;
+    color: white;
+    padding: 30px 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 15px;
+}
+
+.profile h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin: 0 5px;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffcc00;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    margin-top: 20px;
+    
+}
+
+nav ul li {
+    margin: 18px 0;
+    
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+    
+  
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    height: 100vh;
+     width: 100%;
+    background: url("images/background.jpg") center 15% no-repeat;
+    background-size: cover;   /* Shows full body */
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    position: relative;
+    background-color: #1a1a1a;  /* fills empty sides nicely */
+}
+
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.25); /* lighter so your face isn't too dark */
+}
+
+
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 49px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 24px;
+}
