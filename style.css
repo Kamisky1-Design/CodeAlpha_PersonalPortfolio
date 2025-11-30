@@ -123,3 +123,66 @@ nav ul li a.active {
 .hero-content p {
     font-size: 24px;
 }
+
+/* ABOUT SECTION */
+
+/* Push all main sections to the right of the sidebar */
+main, section {
+    margin-left: 250px;
+}
+
+.about-section {
+    padding: 60px 40px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.about-left {
+    flex: 1;
+}
+
+.about-left h2 {
+    margin-bottom: 20px;
+}
+
+.about-left p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.about-details p {
+    margin: 5px 0;
+}
+
+.about-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 18px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.about-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-right img {
+    width: 80%;
+    max-width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.about-section {
+    padding: 60px 40px;
+    padding-left: 20px; /* extra spacing for comfort */
+}
